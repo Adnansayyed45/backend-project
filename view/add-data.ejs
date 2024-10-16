@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New User</title>
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1e26b8, #8f94fb);
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        /* Container for Form */
+        .form-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        /* Header Styles */
+        .form-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        /* Input Fields */
+        .form-container input[type="text"],
+        .form-container input[type="number"] {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 25px;
+            background-color: rgb(246, 246, 246);
+            color: #000000;
+            font-size: 14px;
+            box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        /* Input Focus Effect */
+        .form-container input[type="text"]:focus,
+        .form-container input[type="number"]:focus {
+            background-color: rgba(255, 255, 255, 0.4);
+            outline: none;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Submit Button */
+        .form-container button {
+            width: 100%;
+            padding: 15px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        /* Hover Effect for Button */
+        .form-container button:hover {
+            background-color: #45a049;
+            transform: translateY(-3px);
+        }
+
+        /* Back to Dashboard Link */
+        .form-container .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .form-container .back-link:hover {
+            color: #dcdcdc;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Add New User</h1>
+        <form action="/add" method="POST">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="number" name="age" placeholder="Age" required>
+            <input type="text" name="power" placeholder="Power" required>
+            <input type="text" name="hobbies" placeholder="Hobbies" required>
+            <button type="submit">Add User</button>
+        </form>
+        <a href="/" class="back-link">Back to Dashboard</a>
+    </div>
+</body>
+</html>

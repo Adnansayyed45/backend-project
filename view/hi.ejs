@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <!-- Google Fonts Integration -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Body Styling */
+        body {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background: linear-gradient(135deg, #37bacb, #ffffff);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container Styling */
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 250px;
+            width: 90%;
+        }
+
+        /* Header Styling */
+        h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        /* Button Styling */
+        .btn {
+            background-color: #4CAF50; /* Green background */
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Alternate Button Colors */
+        .btn.signup {
+            background-color: #2b2887; /* Orange background */
+        }
+
+        /* Hover Effect for Buttons */
+        .btn:hover {
+            background-color: #45a049;
+            transform: translateY(-5px);
+        }
+
+        .btn.signup:hover {
+            background-color: #3119e6;
+            transform: translateY(-3px);
+        }
+
+        /* Responsive Typography */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .btn {
+                padding: 12px 25px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hi Everyone</h1>
+        <a href="/login"><button class="btn">Login</button></a>
+        <a href="/signup"><button class="btn signup">Sign Up</button></a>
+    </div>
+</body>
+</html>
